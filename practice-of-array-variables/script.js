@@ -37,5 +37,5 @@ for(let i=0;i<4;i++){
 let i=0;
 while(i<4){
     console.log(`preincrement,${i++}`)
-    console.log(`postincrement,${i++}`)
+    console.log(`postincrement,${++i}`)
 }

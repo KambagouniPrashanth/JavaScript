@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>promise all,any,race</h1>
+    <div id="output">
+
+    </div>
+    <!-- <script>
+        //your JS code here. If required.
+// function callme(){
+// 	const divElement=document.getElementById("output")
+// divElement.innerHTML="Hello, world!"
+// }
+// window.setTimeout(callme,1000)
+
+function generatePromise(){
+	return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello World!")
+            // reject("hey")
+        },1000)
+    })
+	
+}
+generatePromise().then((data)=>{
+const divElement=document.getElementById("output")
+divElement.innerText=data;
+}).catch((error)=>{
+    console.log(error.name)
+})
+
+
+    </script> -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

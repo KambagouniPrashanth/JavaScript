@@ -54,17 +54,30 @@
 // document.writeln(isClassTommorow)
 // console.log(isClassTommorow)
 
-var radius=parseInt(prompt("Enter the radius"))
-var length=parseInt(prompt("Enter the length"))
-var area=2+radius+length
-var area1=2*radius*length
-console.log(typeof area)
-console.log(area)
+// var radius=parseInt(prompt("Enter the radius"))
+// var length=parseInt(prompt("Enter the length"))
+// var area=2+radius+length
+// var area1=2*radius*length
+// console.log(typeof area)
+// console.log(area)
 
-//  the way printing in different ways
-document.writeln(`Area of Rectangle:${area1}`)
-console.log(typeof area1)
-console.log(`Area of Rectangle:${area1}`)
+// //  the way printing in different ways
+// document.writeln(`Area of Rectangle:${area1}`)
+// console.log(typeof area1)
+// console.log(`Area of Rectangle:${area1}`)
 
 // document.writeln(`Area of Rectangle:${area1}`)
+let a=20
+let x=()=>{
+    return a*10;
+}
+a=10;
+console.log(x(a))
 
+/* in reference call stack      heap
+                1) a=undefine      #100
+                 x=#100  
+                  
+                 2)a=20 is updated as
+                 a=10 
+                 function return the a=10*10=100*/

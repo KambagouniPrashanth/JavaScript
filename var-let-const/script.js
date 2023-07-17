@@ -49,7 +49,8 @@ function f() {
     document.writeln(a)
 }
 f();
-
+const regex=new RegExp(char,'g')
+return line.replace(regex,what)
 
 
 

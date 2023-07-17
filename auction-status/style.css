@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    font-family: "Lato",sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    /* width: 20%; */
+    margin: 20px;
+    justify-content: space-evenly;
+
+}
+.card{
+    /* display: flex; */
+    /* border: 2px solid red; */
+    flex-direction: column;
+    width: 30%;
+    
+    box-shadow:2px 5px 9px rgb(227 227 227);
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* width: 20%; */
+    
+    
+
+}
+.card .top-container{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid aquamarine;
+    gap:10px
+}
+.top-container .left{
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 28px;
+    
+
+}
+.top-container .left .status{
+    border: 2px solid;
+    background-color: seagreen;
+    border-radius: 10px;
+    font-size: 17px;
+
+}
+.top-container .right{
+   
+
+}
+.card .bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.bottom-container .from{
+    /* width: 38%; */
+    padding:10px;
+    
+}
+.bottom-container .to{
+    /* width: 51%; */
+    font-size: 13px;
+    padding: 10px;
+    
+}
+.bottom-container .price{
+    align-self: flex-end;
+    font-size: 15px;
+    padding:10px;
+}

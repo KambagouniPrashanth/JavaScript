@@ -30,20 +30,21 @@ available:true
 
 // console.log(`No of the colors in${Product.name} is ${Product.colors.length}`)
 // console.log(`Batter backup of${Product.name} is ${Product.details.battery}`)
-// console.log(`Storage of${Product.name} is ${Product.details.storage}`)
+console.log(`Storage of${Product.name} is ${Product.details.storage}`)
 
 
 
 
 
 if(Product.available){
-    console.log("The Product is Available")
+    console.log("The Product is Available,${}")
 }
 else{
     console.log("The Product is Not Available")
 }
+
 for(let x in Product){
-    console.log(x,Product[x])
+    console.log(x,Product[x])//x is a key here
 }
 Product.available=false;
 if(Product.available){
@@ -53,9 +54,9 @@ else{
     console.log("The Product is Not Available")
 }
 
-// for(let x of Product){
-//     console.log(x,product[x])
-// }
+for(let x of Product){
+    console.log(x,Product[x])
+}
 // let count=0;
 // for(let i=0;i<library.length;i++){
 //     if(library[i].readingStatus==true){

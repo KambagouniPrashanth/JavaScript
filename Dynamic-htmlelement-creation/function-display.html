@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .model{
+            width: 634px;
+            height: 548px;
+            position: fixed;
+            top: 41px;
+            left: 0;
+            background-color: rgba(218, 218, 195, 0.58);
+            
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+            .model-body{
+                /* display: none; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+                padding: 10px 20px;
+                border: 8px solid rgb(8, 11, 65);
+                color: white;
+                border-radius: 0.5rem;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            }
+            .model-body div label{
+                color:black
+            }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="model" id="model">
+        <div class="model-body" id="model-body">
+            <div>
+                <label for="name">Enter the Name</label>
+                <input type="text" name="name" id="">
+            </div>
+            <div>
+                <label for="phone">Enter phone no</label>
+                <input type="tel" name="name" id="">
+            </div>
+            <div>
+                <label for="address">Enter the Address</label>
+                <input type="textarea" col="5" row="3" name="name" id="address">
+            </div>
+            
+            <button type="submit" onclick="closeModel()">Submit</button>
+        </div>
+    </div>
+    <button id="btn" onclick="openModel()">Click to show</button>
+    <script src="function-display.js"></script>
+</body>
+</html>
