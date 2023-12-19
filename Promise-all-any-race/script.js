@@ -36,29 +36,29 @@
 // console.log(x)
 // Promise {<fulfilled>: ƒ}
 
-// let a=new Promise(resolve=>{
-//     setTimeout(()=>{
-//         resolve("a")
-//     },1000)
-// })
+/*let a=new Promise(resolve=>{
+    setTimeout(()=>{
+        resolve("a")
+    },1000)
+})
 
-// let b=new Promise(resolve=>{
-//     setTimeout(()=>{
-//         resolve("b")
-//     },3000)
-// })
+let b=new Promise(resolve=>{
+    setTimeout(()=>{
+        resolve("b")
+    },3000)
+})
 
-// let c=new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         resolve("c")
-//         // reject("hey")
-//     },1000)
-// })
+let c=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("c")
+        // reject("hey")
+    },1000)
+})
 
-// let x=Promise.all([a,b,c])
-// setTimeout(()=>{
-//     console.log(x)
-// },4000)
+let x=Promise.all([a,b,c])
+setTimeout(()=>{
+    console.log(x)
+},4000)*/
 
 // Promise {<fulfilled>: Array(3)}
 // [[Prototype]]
@@ -71,52 +71,52 @@
 // : 
 // Array(3)
 
-// let a=new Promise(resolve=>{
-//     setTimeout(()=>{
-//         resolve("a")
-//     },1000)
-// })
+let a=new Promise(resolve=>{
+    setTimeout(()=>{
+        resolve("a")
+    },1000)
+})
 
-// let b=new Promise(reject=>{
-//     setTimeout(()=>{
-//         reject("b")
-//     },3000)
-// })
+let b=new Promise(reject=>{
+    setTimeout(()=>{
+        reject("b")
+    },3000)
+})
 
-// let c=new Promise(resolve=>{
-//     setTimeout(()=>{
-//         resolve("c")
-//     },1000)
-// })
-// let x=Promise.all([a,b,c])
-// setTimeout(()=>{
-//     console.log(x)
-// },4000)
+let c=new Promise(resolve=>{
+    setTimeout(()=>{
+        resolve("c")
+    },1000)
+})
+let x=Promise.all([a,b,c])
+setTimeout(()=>{
+    console.log(x)
+},4000)
 // Promise {<fulfilled>: Array(3)}
 
 
 
 
-// let a=new Promise(reject=>{
-//     setTimeout(()=>{
-//         reject("a")
-//     },1000)
-// })
+/*let a=new Promise(reject=>{
+    setTimeout(()=>{
+        reject("a")
+    },1000)
+})
 
-// let b=new Promise(reject=>{
-//     setTimeout(()=>{
-//         reject("b")
-//     },3000)
-// })
+let b=new Promise(reject=>{
+    setTimeout(()=>{
+        reject("b")
+    },3000)
+})
 
-// let c=new Promise(resolve=>{
-//     setTimeout(()=>{
-//         resolve("c")
-//     },1000)
-// })
-// let x=Promise.any([a,b,c])
-// x.then(()=>
-// console.log(x))
+let c=new Promise(resolve=>{
+    setTimeout(()=>{
+        resolve("c")
+    },1000)
+})
+let x=Promise.any([a,b,c])
+x.then(()=>
+console.log(x))*/
 
 // Promise {<fulfilled>: 'a'}
 
@@ -244,7 +244,7 @@ setTimeout(()=>{
 // Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: "c"
 
 //if i give same time for all the promises then it fallow the way they intialized
-let a = new Promise((resolve, reject) => {
+/*let a = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("manjeeth")
     }, 1000)
@@ -266,6 +266,6 @@ let c = new Promise((resolve, reject) => {
 let x = Promise.race([a, b, c])
 setTimeout(()=>{
     console.log(x)
-})
+})*/
 //promise{pending}
 //manjeeth printed bcz it is intialized first

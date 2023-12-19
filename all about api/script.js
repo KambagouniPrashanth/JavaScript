@@ -123,11 +123,13 @@ console.log(fetchStockData())*/
 
 
 
-const urlofcrypto='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false';
+const urlofcrypto='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false';
+
 async function fetchStockData(){
     // console.log("called function")
     const response=await fetch(urlofcrypto,{method:"GET"});
     const result=await response.json();
+    console.log(result)
     addDataontoUI(result)
     
 }

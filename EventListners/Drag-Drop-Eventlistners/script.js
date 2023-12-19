@@ -21,13 +21,13 @@ const containerElement=document.getElementById("container")
 // })
 
 
-containerElement.addEventListener("dragenter",()=>{
-    containerElement.className="active-container";
-})
+// containerElement.addEventListener("dragenter",()=>{
+//     containerElement.className="active-container";
+// })
 
-containerElement.addEventListener("dragleave",()=>{
-    containerElement.className="inactive-container";
-})
+// containerElement.addEventListener("dragleave",()=>{
+//     containerElement.className="inactive-container";
+// })
 
 containerElement.addEventListener("dragover",(e)=>{
     e.preventDefault();

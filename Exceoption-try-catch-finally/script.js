@@ -4,8 +4,8 @@
 // before erro
 // script.js:2 
         
-//        Uncaught ReferenceError: a is not defined
-//     at script.js:2:13
+// Uncaught ReferenceError: a is not defined
+// at script.js:2:13
 // index.html:41 Live reload enabled.
 // :5501/favicon.ico:1 
       

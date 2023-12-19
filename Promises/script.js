@@ -214,7 +214,7 @@ let prom=new Promise((resolve,reject)=>{
                 "pune"
             ]
             resolve(responsedata)
-    })
+    },5000)
 })
 
 prom.then((data)=>{
@@ -223,14 +223,14 @@ prom.then((data)=>{
         time=time+1000;
         setTimeout(()=>{
             console.log(data[i]);
-            console.log(time)
+            // console.log(time)
 
         },time)
         
     }
     
     console.log("succesful listner")
-})
+}).catch(e=>console.log(e))
 
 
 

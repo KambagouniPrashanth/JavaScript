@@ -125,7 +125,11 @@ function add(a,b,checkNumisEvenorODD){
     let result=a+b;
     valid(result)//it is executed first bcz it is called first this callstack behaviour
     checkNumisEvenorODD(result)
-    function valid(days){
+    
+
+}
+
+function valid(days){
         if(days>0 && days<=30){
             console.log("valid")
         }
@@ -134,9 +138,6 @@ function add(a,b,checkNumisEvenorODD){
         }
     }
    
-
-}
-
 function checkNumisEvenorODD(result,valid){
     result+=3;
     if(result%2==0){
@@ -146,7 +147,7 @@ function checkNumisEvenorODD(result,valid){
         console.log("it is odd")
     }
    
-    valid(reusult)//it will give error
+    // valid(result)//it will give error
 
 }
 add(4,5,checkNumisEvenorODD)

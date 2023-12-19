@@ -27,14 +27,14 @@ localStorage.getItem("WZRK_ARP")
 'update existing key values also'
 localStorage.removeItem("abc")
 undefined*/
-/*let userobj={
+let userobj={
     name:"Prashanth",
     age:21,
 }
 localStorage.setItem("user",JSON.stringify(userobj))
 let user=localStorage.getItem("user");
 console.log(JSON.parse(user).name)
-console.log(JSON.parse(user).age)*/
+console.log(JSON.parse(user).age)
 
 // console.log(sessionStorage.setItem("user","Prashant"))
 // console.log(sessionStorage.setItem("abc","some random value"))

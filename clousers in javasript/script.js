@@ -12,11 +12,12 @@ function a(){
 }
 function myFunction(){
     let count=0;
-    count+=a();
+    let result=a();
+    count+=result;
     document.getElementById("demo2").innerHTML=count;
     return count;
 }
-let add=(a,b)=>a+b
-console.log(add(2,3))
+// let add=(a,b)=>a+b
+// console.log(add(2,3))
 
 btn.addEventListener("click",myFunction)

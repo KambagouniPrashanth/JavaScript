@@ -17,6 +17,21 @@ let textColorMapping={
     "COMPLETED":"white",
 }
 
+async function fetchauctionData(){
+    try{
+        const response=await fetch(endpoint,{method:"GET"})
+        const result=await response.json();
+        console.log(result)
+        appendDataOnUI(result)
+
+    }
+    catch(error){
+        alert(error.message)
+    }
+    
+}
+
+fetchauctionData();
 
 function appendDataOnUI(data){
     data.forEach(item => {
@@ -58,20 +73,6 @@ function appendDataOnUI(data){
     });
 }
 
-async function fetchauctionData(){
-    try{
-        const response=await fetch(endpoint,{method:"GET"})
-        const result=await response.json();
-        console.log(result)
-        appendDataOnUI(result)
 
-    }
-    catch(error){
-        alert(error.message)
-    }
-    
-}
-
-fetchauctionData();
 
 

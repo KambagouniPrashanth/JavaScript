@@ -1,10 +1,20 @@
-/*function somepromise1(){
+function somepromise1(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             resolve("Prashanth")
         },1000)
     })
 }
+
+function somePromise3(name,){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve(name+" "+"Goud")
+        },2000)
+    })
+
+}
+
 
 function somepromise2(name){
     return new Promise((resolve,reject)=>{
@@ -18,10 +28,20 @@ function somepromise2(name){
 // console.log(x)
 somepromise1().then((data)=>{
     let x=somepromise2(data);
+    
     x.then((data)=>{
         console.log(data)
     })
-})*/
+    
+})
+somepromise2().then((data)=>{
+    let y=somepromise3(data)
+    y.then((data)=>{
+        console.log(data)
+    }).catch((e)=>{
+        console.log(e)
+    })
+})
 
 //Prashanth Kambagouni
 
@@ -182,7 +202,7 @@ x.then((data)=>{
 
 
 
-async function callme(){
+/*async function callme(){
     let a=new Promise((resolve,reject)=>{
         console.log(1)
         resolve("Vijay")
@@ -190,9 +210,9 @@ async function callme(){
     console.log(a)
     let b=new Promise((resolve,reject)=>{
         console.log(2)
-        resolve("setupathi"+)
+        resolve("setupathi"+a)
     })
     console.log(b)
 
 }
-console.log(callme())
+console.log(callme())*/

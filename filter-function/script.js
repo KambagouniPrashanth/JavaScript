@@ -1,20 +1,21 @@
-// const ages = [32, 33, 16, 40];
+const ages = [32, 33, 16, 40];
 
-// document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
 
-// function checkAdult(age) {
-//   return age >= 18;
-// }
+function checkAdult(age) {
+  return age >= 18;
+}
 
-const ages = ["Prashanth","Amar","Navven","Ramana"];
+// const ages = ["Prashanth","Amar","Navven","Ramana"];
 
 
 
 // let agesort=(a,b)=>a-b;
-function ageSort(ages.a,ages.b){
-    return ages.a-ages.b;
+function ageSort(a,b){
+    return a.length>b.length;
 }
 new_arr=ages.filter(ageSort)
+console.log(new_arr)
 new_arr.forEach(element => {
     document.getElementById("demo").innerHTML = element;
 });

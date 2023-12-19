@@ -25,12 +25,13 @@ fetch(video_http+new URLSearchParams({
 
 
 const getChannelIcon=(video_data)=>{
-    console.log(video_data)
+    // console.log(video_data)
     fetch(channel_http+new URLSearchParams({
        key:API_KEY,
        part:"snippet",
        id:video_data.snippet.channelId,
     })).then(res=>res.json()).then(data=>{
+        // console.log(data)
         video_data.channelThumbnail= data.items[0].snippet.thumbnails.default.url;
         makeVideoCard(video_data)
     })
@@ -40,7 +41,7 @@ const videoCardContainer = document.querySelector('.video-container');
 
 
 const makeVideoCard=(data)=>{
-    // console.log(data)
+    console.log(data)
     
     videoCardContainer.innerHTML+=`<div class="video" onclick="location.href = 'https://youtube.com/watch?v=${data.id}'">
     <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" alt="">
